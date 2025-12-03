@@ -45,6 +45,16 @@ php artisan migrate
 
 # Seed initial data
 php artisan db:seed
+---
 
-# Start the Laravel development server
+## 📦 Testing 
+```bash
+# Install migrations
+php artisan migrate --env=testing
+
+# run the test
+php artisan test
+
+
+### **How to Run the Project**# Start the Laravel development server
 php artisan serve
