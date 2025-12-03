@@ -19,8 +19,8 @@ class HoldController extends Controller
 
             return response()->json([
                 'hold_id' => $hold->id,
-                'expires_at' => $hold->expires_at,
-            ]);
+                'expires_at' => $hold->expires_at
+            ], 201);
         }
         catch (\Exception $e) {
             return response()->json(['error' => $e->getMessage()], 400);
